@@ -4,6 +4,22 @@
   </a>
 </p>
 
+# Audaos FFmpeg
+
+## 单线程版本使用说明
+
+```javascript
+const { createFFmpeg } = FFmpeg;
+const ffmpeg = createFFmpeg({
+  corePath: "http://localhost:3000/public/ffmpeg-core.js",
+  // Use public address if you don't want to host your own.
+  // corePath: 'https://unpkg.com/@ffmpeg/core@0.10.0/dist/ffmpeg-core.js'
+  /** 单线程: main, 多线程: proxy_main, 为空默认多线程 */
+  mainName: 'main',
+  log: true,
+});
+```
+
 # ffmpeg.wasm
 
 [![Node Version](https://img.shields.io/node/v/@ffmpeg/ffmpeg.svg)](https://img.shields.io/node/v/@ffmpeg/ffmpeg.svg)
@@ -177,3 +193,5 @@ const ffmpeg = createFFmpeg({
   log: true,
 });
 ```
+
+---

@@ -1,6 +1,6 @@
 {
-  "name": "@ffmpeg/ffmpeg",
-  "version": "0.10.1",
+  "name": "@audaos/ffmpeg",
+  "version": "0.10.3",
   "description": "FFmpeg WebAssembly version",
   "main": "src/index.js",
   "types": "src/index.d.ts",

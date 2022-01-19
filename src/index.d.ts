@@ -14,6 +14,8 @@ type ProgressCallback = (progressParams: { ratio: number }) => any;
 export interface CreateFFmpegOptions {
     /** path for ffmpeg-core.js script */
     corePath?: string;
+    /** 单线程: main, 多线程: proxy_main, 为空默认多线程 */
+    mainName: string;
     /** a boolean to turn on all logs, default is false */
     log?: boolean;
     /** a function to get log messages, a quick example is ({ message }) => console.log(message) */
